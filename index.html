@@ -14,14 +14,18 @@
 
 <body>
     <!--navbar-->
+
     <div class="navbar">
+        <input type="checkbox" class="checkbox" id="click" hidden>
         <!--sidebar-->
         <div class="sidebar">
-            <div class="menu-icon">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
-            </div>
+            <label for="click">
+                <div class="menu-icon">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </label>
             <ul class="social-icons-list">
                 <li>
                     <a href="https://www.facebook.com" class="social-link"><i class="fab fa-facebook-f"></i></a>
@@ -40,10 +44,46 @@
                 <p>2020</p>
             </div>
         </div>
-    </div>
-    <!--end sidebar-->
-    <!--navbar end-->
 
+        <!--end sidebar-->
+        <!--navbar end-->
+        <!--navigation-->
+        <nav class="navigation">
+            <div class="navigation-header">
+                <h1 class="navigation-heading">Care & Shine</h1>
+
+                <form class="navigation-search">
+                    <input class="navigation-search-input" type="text" placeholder="Search...">
+                    <button class="navigation-search-btn"><i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Home</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">About Us</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Products</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">News</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Customers</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>&copy; 2020. Care & Shine. All rights reserved.</p>
+            </div>
+        </nav>
+        <!--end navigation-->
+    </div>
 </body>
 
 </html>

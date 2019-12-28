@@ -23,6 +23,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .menu-icon{
@@ -39,7 +40,7 @@ body{
 
 .line-1, .line-3{
     width: 1.8rem;
-    transition: width .3s;
+    transition: all .4s;
 }
 
 .menu-icon:hover .line{
@@ -72,7 +73,141 @@ body{
     color: #015668;
 }
 /*end of sidebar*/
-/*end of navbar*/
 
-    font-family: 'Dancing Script', cursive;
+/*navigation*/
+.navigation{
+    left: -32rem;
+    position: fixed;
+    width: 40rem;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 58, 70, 1), rgba(0, 58, 70, 0.5)), url(../img/devin-avery-8lx5iVrkn5k-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: left .4s cubic-bezier(1, 1, 1, 1);
+}
+
+.navigation-heading{
+    text-align: center;
+    color: #eee;
+    font-size: 3rem;
+    letter-spacing: .8rem;
+    margin-top: 5rem;
+    font-weight: 300;
+}
+
+.navigation-search{
+    position: relative
+}
+
+.navigation-search-input{
+    width: 28rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: 0.1rem #ffd369 solid;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    background-color: rgba(1, 48, 58, 0.5);
+    color: #eee;
+    padding-left: 1rem;
+    transition: background-color .3s;
+    outline: none;
+}
+
+.navigation-search-input:focus{
+    background-color: rgba(1, 48, 58, 0.9);
+}
+
+.navigation-search-btn{
+    background-color: transparent;
+    border: none;
+    color: #ffd369;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.9rem;
+}
+
+/*end navigation*/
+
+.navigation-list{
+    padding: 0;
+    width: 38rem;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -4rem;
+}
+.navigation-item{
+    list-style: none;
+    position: relative;
+}
+
+.navigation-link{
+    text-decoration: none;
+    color: #eee;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color .3s;
+}
+
+.navigation-link::before{
+    content: "";
+    width: 0;
+    height: .1rem;
+    background-color: #ffd369;
+    position: absolute;
+    top: 1.2rem;
+    right: -4rem;
+    transition: width .5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-link::after{
+    content: "";
+    width: 0;
+    height: .1rem;
+    background-color: #ffd369;
+    position: absolute;
+    top: 1.2rem;
+    left: -4rem;
+    transition: width .5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-link:hover::before,
+.navigation-link:hover::after{
+    width: 3rem;
+}
+
+.navigation-link:hover{
+    color: #ffd369;
+}
+
+.copyright{
+    font-size: 1.2rem;
+    color: #ffd369;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox:checked ~ .navigation{
+    left: 8rem;
+}
+
+.checkbox:checked ~ .sidebar .line-1{
+    transform: rotate(-405deg) translate(-5px, 6px);
+}
+
+.checkbox:checked ~ .sidebar .line-2{
+    opacity: 0;
+}
+
+.checkbox:checked ~ .sidebar .line-3{
+    transform: rotate(405deg) translate(-5px, -6px);
+}
+/*end of navbar*/
 
