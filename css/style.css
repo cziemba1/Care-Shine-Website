@@ -64,7 +64,7 @@ body{
 }
 
 .social-link:hover{
-    color: #ffd369;
+    color: #ff9900;
 }
 
 .year{
@@ -80,13 +80,14 @@ body{
     position: fixed;
     width: 40rem;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 58, 70, 1), rgba(0, 58, 70, 0.5)), url(../img/devin-avery-8lx5iVrkn5k-unsplash.jpg) no-repeat center;
+    background: linear-gradient(to bottom, rgba(0, 10, 12,1), rgba(0, 10, 12, .8)), url(../img/devin-avery-8lx5iVrkn5k-unsplash.jpg) no-repeat center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     transition: left .4s cubic-bezier(1, 1, 1, 1);
+
 }
 
 .navigation-heading{
@@ -106,7 +107,7 @@ body{
     width: 28rem;
     height: 3rem;
     border-radius: 2rem;
-    border: 0.1rem #ffd369 solid;
+    border: 0.1rem #ff9900 solid;
     font-size: 1.2rem;
     letter-spacing: .2rem;
     background-color: rgba(1, 48, 58, 0.5);
@@ -123,7 +124,7 @@ body{
 .navigation-search-btn{
     background-color: transparent;
     border: none;
-    color: #ffd369;
+    color: #ff9900;
     position: absolute;
     right: 0.5rem;
     top: 0.9rem;
@@ -160,7 +161,7 @@ body{
     content: "";
     width: 0;
     height: .1rem;
-    background-color: #ffd369;
+    background-color: #ff9900;
     position: absolute;
     top: 1.2rem;
     right: -4rem;
@@ -184,12 +185,12 @@ body{
 }
 
 .navigation-link:hover{
-    color: #ffd369;
+    color: #ff9900;
 }
 
 .copyright{
     font-size: 1.2rem;
-    color: #ffd369;
+    color: #ff9900;
     letter-spacing: .2rem;
     margin-bottom: 1rem;
 }
@@ -211,3 +212,68 @@ body{
 }
 /*end of navbar*/
 
+/*header*/
+.header{
+    margin-left: 8rem;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(211, 211, 211, 0.7), rgba(219, 219, 219, 0.4)), url("../img/christin-hume-0MoF-Fe0w0A-unsplash.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.brand{
+    display: flex;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.website-heading{
+    font-size: 3.8rem;
+    letter-spacing: .8rem;
+    font-weight: 500;
+    color: #eee;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14rem;
+}
+
+.banner-heading{
+    color: #ff9900;
+    font-weight: 800;
+    font-size: 7rem;
+    letter-spacing: .4rem;
+    margin-bottom: 0;
+}
+
+.banner-paragraph{
+    color: #015668;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    margin-top: 0;
+}
+
+.banner-btn{
+    background-color: transparent;
+    border: .1rem solid #015668;
+    color: #015668;
+    border-radius: 1rem;
+    font-size: 3rem;
+    padding: 0.5rem 3rem;
+}
+
+.banner-btn:hover{
+    background-color: #ff9900;
+    color: #eee;
+    border: none;
+}
+
+.banner-btn:active{
+    transform: translatex(.2rem)
+}
+/*end of header*/
