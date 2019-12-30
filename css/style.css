@@ -80,19 +80,18 @@ body{
     position: fixed;
     width: 40rem;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 10, 12,1), rgba(0, 10, 12, .8)), url(../img/devin-avery-8lx5iVrkn5k-unsplash.jpg) no-repeat center;
+    background-color: #eee;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     transition: left .4s cubic-bezier(1, 1, 1, 1);
-
 }
 
 .navigation-heading{
     text-align: center;
-    color: #eee;
+    color: #015668;
     font-size: 3rem;
     letter-spacing: .8rem;
     margin-top: 5rem;
@@ -110,8 +109,8 @@ body{
     border: 0.1rem #ff9900 solid;
     font-size: 1.2rem;
     letter-spacing: .2rem;
-    background-color: rgba(1, 48, 58, 0.5);
-    color: #eee;
+    background-color: rgba(255, 153, 0, 0.2);
+    color: #015668;
     padding-left: 1rem;
     transition: background-color .3s;
     outline: none;
@@ -119,12 +118,14 @@ body{
 
 .navigation-search-input:focus{
     background-color: rgba(1, 48, 58, 0.9);
+    border: #015668;
+    color: white;
 }
 
 .navigation-search-btn{
     background-color: transparent;
     border: none;
-    color: #ff9900;
+    color: #015668;
     position: absolute;
     right: 0.5rem;
     top: 0.9rem;
@@ -149,7 +150,7 @@ body{
 
 .navigation-link{
     text-decoration: none;
-    color: #eee;
+    color:#015668;
     letter-spacing: .2rem;
     font-size: 2rem;
     font-weight: 400;
@@ -227,12 +228,14 @@ body{
 }
 
 .website-heading{
-    font-size: 3.8rem;
-    letter-spacing: .8rem;
+    font-size: 2rem;
+    letter-spacing: .4rem;
     font-weight: 500;
     color: #eee;
-    margin-left: 1rem;
+    margin-left: .1rem;
+    padding: 0;
     margin-top: 1rem;
+
 }
 
 .banner{
@@ -249,6 +252,7 @@ body{
     font-size: 7rem;
     letter-spacing: .4rem;
     margin-bottom: 0;
+    animation: anim 4s 0.3s backwards;
 }
 
 .banner-paragraph{
@@ -256,6 +260,7 @@ body{
     font-size: 4rem;
     letter-spacing: .2rem;
     margin-top: 0;
+    animation: anim 3s 1s backwards;
 }
 
 .banner-btn{
@@ -265,6 +270,16 @@ body{
     border-radius: 1rem;
     font-size: 3rem;
     padding: 0.5rem 3rem;
+    animation: anim 3s 1.5s backwards;
+}
+
+.btn-arrow{
+    margin-left: .2rem;
+    transition: margin-left .5s;
+}
+
+.banner-btn:hover .btn-arrow{
+    margin-left: 2rem;
 }
 
 .banner-btn:hover{
@@ -276,4 +291,129 @@ body{
 .banner-btn:active{
     transform: translatex(.2rem)
 }
+
+@keyframes anim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 /*end of header*/
+
+/*section about-us*/
+
+.about-us{
+    margin-left: 8rem;
+    display: flex;
+    height: 73rem;
+}
+
+.about-heading{
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 73rem;
+    transition: all 1s ease-out;
+}
+
+.about-heading:hover{
+    background: linear-gradient(to top, rgba(226, 226, 226, 0.8), rgba(226, 226, 226, 0.9)), url("../img/about-us-4.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.about-more-btn{
+    position: relative;
+    border: .1rem solid #015668;
+    font-size: 2.3rem;
+    background: transparent;
+    padding: 0.5rem 2rem;
+    color: #015668;
+    letter-spacing: .2rem;
+    border-radius: 2rem;
+    top: 5rem;
+    cursor: pointer;
+}
+
+.about-more-btn:hover{
+    background-color: #ff9900;
+    color: #eee;
+    border: .1rem solid #ff9900;
+}
+
+.line1{
+    background-color: #ff9900;
+    height: .1rem;
+    z-index: -1;
+}
+
+.line-11{
+    position: relative;
+    bottom: 1rem;
+    width: 10rem;  
+}
+
+.line-12{
+    position: relative;
+    bottom: -13rem;
+    width: 28rem;
+}
+
+.line-13{
+    position: relative;
+    bottom: -26rem;
+    width: 50rem;
+}
+
+.about-header{
+    font-size: 4rem;
+    color: #015668;
+    letter-spacing: .2rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+.about-sub-header{
+    font-size: 3rem;
+    color: #ff9900;
+    letter-spacing: .2rem;
+    font-weight: 300;
+}
+
+.about-paragraph{
+    font-size: 2rem;
+    color: #015668;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 6rem;
+}
+
+.about-images{
+    flex: 1 1 50%;
+    height: 73rem;
+
+}
+
+.a-image{
+    width: 50%;
+}
+
+.about-img-2{
+    position: relative;
+    bottom: -3rem;
+    left: 6rem;
+}
+
+.about-img-3{
+    position: relative;
+    bottom: 38rem;
+    z-index: -1;
+    left: 31rem;
+}
+
+/*end section about-us*/
+
